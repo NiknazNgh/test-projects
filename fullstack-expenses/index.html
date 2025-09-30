@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    form { margin-bottom: 20px; }
+    input, button { padding: 6px; margin: 4px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+  <h1>💸 Expense Tracker</h1>
+
+  <form id="expenseForm">
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="note" placeholder="Note">
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>Expenses</h2>
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Amount</th><th>Note</th></tr>
+    </thead>
+    <tbody id="expenseTable"></tbody>
+  </table>
+  <h3 id="total"></h3>
+
+  <script>
+    const API_URL = "http://127.0.0.1:8000";
+
+    async function fetchExpenses() {
+      const res = await fetch(`${API_URL}/list`);
+      const data = await res.json();
+      const tbody = document.getElementById("expenseTable");
+      tbody.innerHTML = "";
+      data.expenses.forEach(e => {
+        const row = `<tr><td>${e.category}</td><td>$${e.amount}</td><td>${e.note}</td></tr>`;
+        tbody.innerHTML += row;
+      });
+      document.getElementById("total").innerText = "Total: $" + data.total;
+    }
+
+    document.getElementById("expenseForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const category = document.getElementById("category").value;
+      const amount = parseFloat(document.getElementById("amount").value);
+      const note = document.getElementById("note").value;
+
+      await fetch(`${API_URL}/add`, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ category, amount, note })
+      });
+
+      e.target.reset();
+      fetchExpenses();
+    });
+
+    fetchExpenses();
+  </script>
+</body>
+</html>
