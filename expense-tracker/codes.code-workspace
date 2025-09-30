@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../random-generator"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "codes"
+	}
+}
