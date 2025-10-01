@@ -1,10 +1,8 @@
 import os
 import shutil
 
-# Pick the folder you want to clean
-DOWNLOADS = r"C:\Users\NEGAHDN\OneDrive - City of Fort Worth\Documents"
+DOWNLOADS = r"C:\Users\NEGAHDN\OneDrive - City of Fort Worth"
 
-# File type categories
 FILE_TYPES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif"],
     "Documents": [".pdf", ".docx", ".txt", ".xlsx"],
@@ -21,10 +19,12 @@ def organize_folder():
         if os.path.isdir(file_path):
             continue
 
-        # Get extension
+        # Skip hidden/system files (those starting with ".")
+        if filename.startswith("."):
+            continue
+
         _, ext = os.path.splitext(filename)
 
-        # Find matching category
         moved = False
         for category, extensions in FILE_TYPES.items():
             if ext.lower() in extensions:
@@ -36,11 +36,13 @@ def organize_folder():
                 break
 
         if not moved:
-            # Put everything else in "Others"
             other_folder = os.path.join(DOWNLOADS, "Others")
             os.makedirs(other_folder, exist_ok=True)
-            shutil.move(file_path, os.path.join(other_folder, filename))
-            print(f"Moved: {filename} → Others/")
+            try:
+                shutil.move(file_path, os.path.join(other_folder, filename))
+                print(f"Moved: {filename} → Others/")
+            except PermissionError:
+                print(f"⚠ Skipped locked file: {filename}")
 
 if __name__ == "__main__":
     organize_folder()
