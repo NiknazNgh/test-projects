@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Pick the folder you want to clean
-DOWNLOADS = r"C:\Users\NEGAHDN\Downloads"
+DOWNLOADS = r"C:\Users\NEGAHDN\OneDrive - City of Fort Worth\Documents"
 
 # File type categories
 FILE_TYPES = {
