@@ -1,7 +1,7 @@
 import os
 import hashlib
 
-FOLDER = r"C:\Users\NEGAHDN\Downloads\test projects\important_files"  # change this path
+FOLDER = r"C:\Users\NEGAHDN\Downloads"  # change this path
 
 def file_hash(path):
     """Generate a SHA256 hash of a file."""
