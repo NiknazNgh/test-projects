@@ -1,0 +1,30 @@
+Let's break it down step by step:
+
+1st row (earbuds):
+Each icon shows a pair of earbuds.
++0 +0 =30
+
+Equatio1
+So, 3 pairs = 30 — each pair = 10.
+
+2nd row (person + person + earbuds pair = 20):
+2+2+10=20- & + & =10-eachperson=5.
+
+3rd row (watches + person = 13):
+
+(a pair of watches in one icon) + +2=13
+So, (2xwatches) + (2xwatches) + 5 = 13
+
+That's 4xwatches + 5 = 13 — 4xwatches = 8 — each watch = 2.
+
+4th row (trick row):
+
+It shows: ()) (but now just one earbud, not a pair!) + 2 x
+© One earbud (not a pair) = 10> 2=5
+© Person =5
+© One watch = 2
+
+Now calculate carefully:
+54+ (5x 2)=54+10=15
+
+Final Answer: 15
