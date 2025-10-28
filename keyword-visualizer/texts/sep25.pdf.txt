@@ -1,0 +1,146 @@
+Page1of3
+> <
+71LS
+7100
+3512/7701
+Reliantaccount:17835933-7 DateDue:11/07/2025
+CustomerName:CITYOFFORTWORTH
+AccountName:560010605008
+anNRGcompany
+Currentduedatedoesnotextenddatedueforpreviousamountdue.
+Questionsor Comments?
+Reliant
+P.O.Box1532
+HOUSTONTX77251-1532
+Foraccountinquiries:contactus
+Toll-freeat1-888-315-1558
+Emailusat:solutions@reliant.com
+Visitourwebsite:reliant.com/largebusiness
+ImportantMessage:Explanationofchargesandothercriticalinformationareprovidedonreverseside,whenapplicable.
+TNIRPER
+InvoiceNumber AmountDue
+1110493654095 $71,587.15
+AccountSummary BillingDate: Oct8,2025
+PreviousAmountDue $106,041.35
+Payment 09/09/2025 -37,973.98
+Payment 09/17/2025 -31,180.19
+BalanceForward 36,887.18
+CurrentCharges 34,699.97
+AmountDue $71,587.15
+ServiceAddress: CurrentElectricChargesDetail
+30DayBillingPeriodFrom08/19/2025To09/18/2025
+12200OLDWEATHERFORD
+FORTWORTHTX76008-2935 FixedPrice
+ActualConsumption*Price 639,524kWh @$0.030800/kWh 19,697.34
+Foroutagesoremergencies:
+NodalCongestionCharge 193.80
+callOncorElectricDeliveryat
+MarketSecuritization(Debt)FinancingDefaultAug 10.03
+1-888-313-4747
+PriorPeriodPass-ThruCharges From07/21/2025To08/19/2025
+ESIID: ERCOTContReserveServ(ECRS) 48.40
+10443720008843099 MarketSecuritization-Uplift 290.61
+IDRMeter AncillaryServicesObligationAdj 0.48
+TX-ERCOTAdminFees-CIL 54.43
+ElectricUsageDetail
+TotalPriorPeriodPass-ThruCharges 393.92
+LoadFactor 64.5% TDSPPass-ThroughCharges From08/20/2025To09/18/2025
+TDSPCustomerCharge 11.13
+MeterNumber:118429883LG
+DeliveryPointCharge 21.30
+CurrentMeterRead 09/18/2025 7415
+PreviousMeterRead 08/19/2025 7282 DistributionCostRecoveryFactor 1,460.93
+kWhMultiplier 1,600 EnergyEfficiencyCostRecoveryFactor(EECRF) 142.61
+kWhUsage 212,594 1,409kW @$5.121040/kW 7,215.55
+DistributionCharge(DUOS) 1,409kW @$0.045000/kW 63.41
+NuclearDecommissioningFee 865kW @$5.480386/kW 4,740.53
+TTortaanlsTmDiSssPioPnaCsoss-TthRreocuogvhFaCchtoarrges 13,655.46
+TaxesandAssessments
+GrossReceiptsTaxReimbursementCharge 691.70
+PUCAssessment 57.72
+TotalTaxesandAssessments 749.42
+CurrentCharges $34,699.97
+Pleasemailthisportionwithyourpayment. Makecheckpayableto: RELIANT
+Account:17835933-7
+Reliant
+P.O.Box1532 AMOUNTPAID$:______________.______
+HOUSTONTX77251-1532
+DateDue 11/07/2025
+AmountDue $71,587.15
+Invoicenumber 1110493654095
+Mailpaymentto:
+560010605008
+100FORTWORTHTRL RELIANT,DEPT0954
+FORTWORTHTX76102-2780 POBOX120954
+DALLASTX75312-0954
+1110493654095 001700001783593373000071587150000715871510
+Page2of3
+Reliantaccount:17835933-7 DateDue:11/07/2025
+CustomerName:CITYOFFORTWORTH
+AccountName:560010605008
+MeterNumber:118429881LG
+CurrentMeterRead 09/18/2025 14415
+PreviousMeterRead 08/19/2025 14303
+kWhMultiplier 1,600
+kWhUsage 180,490
+MeterNumber:118429880LG
+CurrentMeterRead 09/18/2025 7978
+PreviousMeterRead 08/19/2025 7876
+kWhMultiplier 1,600
+kWhUsage 162,339
+MeterNumber:195312037LG
+CurrentMeterRead 09/18/2025 427
+PreviousMeterRead 08/19/2025 375
+kWhMultiplier 1,600
+kWhUsage 84,101
+Remittanceinstructions:Toimprovecustomerservice,Reliantwillprocesspaymentsbyaccountnumber.Youraccountnumbermustbeincludedwithyour
+paymenttoensurethatyouraccountisproperlycredited.Youraccountnumberisshownintheboxatthetopofthisinvoice. Youcanprovideyouraccountnumber
+bysendingtheattachedbillstubwithyourpaymentorbyprintingtheaccountnumberonyourcheckadvice.Pleaseincludetheaccountnumberwithallpayments.
+ElectronicPaymentMethodOption:OnlineAccountManagement-Tryournewonlineaccountmanagementtoolwhereyoucanaccessyouraccountanytime.
+Youcanpaybillsonthespot,downloadinvoices,addanddeletesitelocations,viewbillinginformationandenergyusage,createcustomerreportsettingsandmore.
+Callustodayat1-888-315-1558toactivateyouraccountandgetstarted.
+HurricanePreparedness
+HurricaneSeasonisJune1-Nov.30
+PreparednessChecklist:
+(cid:127) MakeanEvacuationPlan.Findactivatedevacuationrouteshere:DriveTexas.orgorbydialing(800)452-9292.Call2-1-1tofindoutifyouliveinan
+evacuationzone.
+(cid:127) Sign-UpforEmergencyAlerts.MakesureyourdeviceisenabledtoreceiveWirelessEmergencyAlerts(WEAs).
+(cid:127) PrepareanEmergencySupplyKit.Learnhowtobuildanemergencykithere:https://www.ready.gov/build-a-kit
+(cid:127) ReviewYourHomeInsurancePolicy.
+(cid:127) RegisterwithStateofTexasEmergencyAssistanceRegistry(STEAR):https://STEAR.tdem.texas.gov/ orbydialing2-1-1ifyouliveinevacuationzone
+and:
+-haveadisabilityormedicalneedsanddonothaveacarorothervehicletouseinanevacuation.
+-haveadisabilityormedicalneedsanddonothavefriendsorfamilytohelpinanevacuation.
+**STEARRegistryinformationcollectedisconfidential**
+HurricanePreparednessOnlineResources:
+TexasDivisionofEmergencyManagementWebsite:www.tdem.texas.gov
+TexasDepartmentofStateHealthServices:www.texasready.gov
+AmericanRedCross:www.redcross.org
+U.S.DepartmentofHomelandSecurity:www.ready.gov
+OfficeoftheTexasGovernorGregAbbott:www.gov.texas.gov
+Page3of3
+Reliantaccount:17835933-7 DateDue:11/07/2025
+CustomerName:CITYOFFORTWORTH
+AccountName:560010605008
+anNRGcompany
+PUCT-requirednotice:Involuntaryloadshedding:Ifthere'sasituationwherethere'snotenoughelectricitysupplytomeetcustomerdemand(load),theElectric
+ReliabilityCouncilofTexas(ERCOT)mayinstructyourTransmissionandDistributionServiceProvider(TDSP)companytoimplementtemporaryservice
+interruptions.Thisisdonetohelpprotecttheelectricgridandisknownasinvoluntaryloadshedding,anditwillbeconductedbasedontheTDSP'sprocedures.
+Formoreinformationandtolearnhowyoucanhelpconserveenergy,visitreliant.com/loadshed.
+Notice:Certaincustomersmaybeeligibletoapplyforthefollowingdesignationsbasedontheirmedicalstatusorthenatureofthebusiness:
+(cid:127) Criticalcareresidentialcustomer:Aresidentialcustomerwhohasapersonpermanentlyresidinginhisorherhomewhohasbeendiagnosedbyaphysicianas
+beingdependentuponanelectric-poweredmedicaldevicetosustainlife.
+(cid:127) Chronicconditionresidentialcustomer:Aresidentialcustomerwhohasapersonpermanentlyresidinginhisorherhomewhohasbeendiagnosedbya
+physicianashavingaseriousmedicalconditionthatrequiresanelectric-poweredmedicaldeviceorelectricheatingorcoolingtopreventtheimpairmentofa
+majorlifefunctionthroughasignificantdeteriorationorexacerbationoftheperson'smedicalcondition.
+(cid:127) Criticalloadpublicsafetycustomer:Anon-residentialcustomerforwhomelectricserviceisconsideredcrucialfortheprotectionormaintenanceofpublicsafety,
+includingbutnotlimitedtohospitals,policestations,firestations,andcriticalwaterandwastewaterfacilities.
+(cid:127) Criticalloadindustrialcustomer:Anindustrialcustomerforwhomaninterruptionorsuspensionofelectricservicewouldcreateadangerousorlife-threatening
+conditionontheretailcustomer'spremises.
+Youcanapplyfortheapplicabledesignation,whichaffordscertainprotections.PleasecontactReliantformoreinformation.Criticalcareresidentialcustomerand
+chronicconditionresidentialcustomerdesignationsrequireanapplicationyourphysiciancompletesandsubmitstoyourTransmissionandDistributionService
+Provider(TDSP)onyourbehalf.Criticalloadpublicsafetycustomerandcriticalloadindustrialcustomerdesignationsrequireyoutocompleteanapplicationwith
+yourTDSP.
+Overduepayments:LatepaymentpenaltiesmaybeassessedonoverduepaymentsattheratespecifiedintheContractDocuments.
+- •
+0 T203 539/1078
