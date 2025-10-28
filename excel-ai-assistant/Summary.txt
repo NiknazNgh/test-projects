@@ -1,621 +1,219 @@
 
-=== Aeration Basin 1 Report.xlsb ===
-
-📄 Sheet: Charts
-• Unnamed: 0: Other data → War chart
-• Operation Basin 1: Other data → War chart
-• Operation Basin 2: Other data → War chart
-• Operation Basin 3: Other data → War chart
-• Operation Basin 4: Other data → War chart
-• Operation Basin 5: Other data → War chart
-• Operation Basin 6: Other data → War chart
-• Operation Basin 9: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Operation Basin 10: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Operation Basin 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Operation Basin 12N: Other data → War chart
-• Operation Basin 12S: Other data → War chart
-• Operation Basin 13N: Other data → War chart
-• Operation Basin 13S: Other data → War chart
-• Unnamed: 17: Other data → Histogram chart
-• Unnamed: 18: Other data → Histogram chart
-• Unnamed: 19: Other data → Histogram chart
-• Unnamed: 20: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
+=== OV_Dig_Gas_Prod_Dryer_Usage_Apr_2025.xlsb ===
 
 📄 Sheet: Report
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
+• Unnamed: 0: Other data → War chart
 • Unnamed: 1: Other data → War chart
 • Unnamed: 2: Other data → War chart
 • Unnamed: 3: Other data → War chart
 • Unnamed: 4: Other data → War chart
 • Unnamed: 5: Other data → War chart
 • Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → Histogram chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → War chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → Histogram chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → War chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Data
-• Timestamp: Late data → Histogram chart
-• MD30027A: Other data → War chart
-• AR11043FT: Other data → War chart
-• AR11042FT: Other data → War chart
-• AR11026AT: Other data → War chart
-• AR11027AT: Other data → War chart
-• AR11035FT: Other data → War chart
-• Calculation: Other data → Histogram chart
-• MD03005A: Other data → War chart
-• Calculation.1: Other data → Histogram chart
-• Calculation.2: Other data → Histogram chart
-• MD03006A: Other data → War chart
-• Calculation.3: Other data → Histogram chart
-• Calculation.4: Other data → Histogram chart
-• MD08007A: Other data → War chart
-• MD25001A: Other data → War chart
-• Calculation.5: Other data → Histogram chart
-• Calculation.6: Other data → Histogram chart
-• MD01014A: Other data → War chart
-• Calculation.7: Other data → Histogram chart
-• Calculation.8: Other data → Histogram chart
-• Calculation.9: Other data → Histogram chart
-• Calculation.10: Other data → Histogram chart
-• MD01015A: Other data → War chart
-• MD01019A: Other data → War chart
-• MD01049A: Other data → War chart
-• MD11003A: Other data → War chart
-• MD11015A: Other data → War chart
-Mean=19610.40, Ltd=1601.95, Fig Dorr=0.58
-
-
-=== Aeration Basin 10 Report.xlsb ===
-
-📄 Sheet: Charts
-• Unnamed: 0: Other data → War chart
-• Operation Basin 1: Other data → War chart
-• Operation Basin 2: Other data → War chart
-• Operation Basin 3: Other data → War chart
-• Operation Basin 4: Other data → War chart
-• Operation Basin 5: Other data → War chart
-• Operation Basin 6: Other data → War chart
-• Operation Basin 9: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Operation Basin 10: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Operation Basin 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Operation Basin 12N: Other data → War chart
-• Operation Basin 12S: Other data → War chart
-• Operation Basin 13N: Other data → War chart
-• Operation Basin 13S: Other data → War chart
-• Unnamed: 17: Other data → Histogram chart
-• Unnamed: 18: Other data → Histogram chart
-• Unnamed: 19: Other data → Histogram chart
-• Unnamed: 20: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Report
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
-• Unnamed: 1: Other data → War chart
-• Unnamed: 2: Other data → War chart
-• Unnamed: 3: Other data → War chart
-• Unnamed: 4: Other data → War chart
-• Unnamed: 5: Other data → War chart
-• Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → War chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → Histogram chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → War chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → Histogram chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-• Unnamed: 40: Other data → War chart
-• Unnamed: 41: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Data
-• Timestamp: Late data → Histogram chart
-• MD30032A: Other data → War chart
-• AR13057FT: Other data → War chart
-• AR13035FT: Other data → War chart
-• AR13034AT: Other data → War chart
-• AR13030AT: Other data → War chart
-• CAR13060FT: Other data → War chart
-• CAR13055FT: Other data → War chart
-• Calculation: Other data → War chart
-• Calculation.1: Other data → Histogram chart
-• MD03015A: Other data → War chart
-• Calculation.2: Other data → Histogram chart
-• Calculation.3: Other data → Histogram chart
-• MD03016A: Other data → War chart
-• Calculation.4: Other data → Histogram chart
-• Calculation.5: Other data → Histogram chart
-• MD08012A: Other data → War chart
-• MD25016A: Other data → War chart
-• Calculation.6: Other data → Histogram chart
-• Calculation.7: Other data → Histogram chart
-• MD01011A: Other data → War chart
-• Calculation.8: Other data → Histogram chart
-• Calculation.9: Other data → Histogram chart
-• Calculation.10: Other data → Histogram chart
-• Calculation.11: Other data → Histogram chart
-• MD01015A: Other data → War chart
-• MD01019A: Other data → War chart
-• MD01049A: Other data → War chart
-• MD11003A: Other data → War chart
-• MD11015A: Other data → War chart
-Mean=17668.17, Ltd=1010.68, Fig Dorr=0.56
-
-
-=== Aeration Basin 11 Report.xlsb ===
-
-📄 Sheet: Charts
-• Unnamed: 0: Other data → War chart
-• Operation Basin 1: Other data → War chart
-• Operation Basin 2: Other data → War chart
-• Operation Basin 3: Other data → War chart
-• Operation Basin 4: Other data → War chart
-• Operation Basin 5: Other data → War chart
-• Operation Basin 6: Other data → War chart
-• Operation Basin 9: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Operation Basin 10: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Operation Basin 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Operation Basin 12N: Other data → War chart
-• Operation Basin 12S: Other data → War chart
-• Operation Basin 13N: Other data → War chart
-• Operation Basin 13S: Other data → War chart
-• Unnamed: 17: Other data → Histogram chart
-• Unnamed: 18: Other data → Histogram chart
-• Unnamed: 19: Other data → Histogram chart
-• Unnamed: 20: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Report
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
-• Unnamed: 1: Other data → War chart
-• Unnamed: 2: Other data → War chart
-• Unnamed: 3: Other data → War chart
-• Unnamed: 4: Other data → War chart
-• Unnamed: 5: Other data → War chart
-• Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → War chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → Histogram chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → War chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → Histogram chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-• Unnamed: 40: Other data → War chart
-• Unnamed: 41: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Data
-• Timestamp: Late data → Histogram chart
-• MD30033A: Other data → War chart
-• AR13049FT: Other data → War chart
-• AR13027FT: Other data → War chart
-• AR13026AT: Other data → War chart
-• AR13022AT: Other data → War chart
-• CAR13052FT: Other data → War chart
-• CAR13047FT: Other data → War chart
-• Calculation: Other data → War chart
-• Calculation.1: Other data → Histogram chart
-• MD03017A: Other data → War chart
-• Calculation.2: Other data → Histogram chart
-• Calculation.3: Other data → Histogram chart
-• MD03018A: Other data → War chart
-• Calculation.4: Other data → Histogram chart
-• Calculation.5: Other data → Histogram chart
-• MD08013A: Other data → War chart
-• MD25019A: Other data → War chart
-• Calculation.6: Other data → Histogram chart
-• Calculation.7: Other data → Histogram chart
-• MD01011A: Other data → War chart
-• Calculation.8: Other data → Histogram chart
-• Calculation.9: Other data → Histogram chart
-• Calculation.10: Other data → Histogram chart
-• Calculation.11: Other data → Histogram chart
-• MD01015A: Other data → War chart
-• MD01019A: Other data → War chart
-• MD01049A: Other data → War chart
-• MD11003A: Other data → War chart
-• MD11015A: Other data → War chart
-Mean=18391.69, Ltd=1498.18, Fig Dorr=0.54
-
-
-=== Aeration Basin 12N Report.xlsb ===
-
-📄 Sheet: Charts
-• Unnamed: 0: Other data → War chart
-• Operation Basin 1: Other data → War chart
-• Operation Basin 2: Other data → War chart
-• Operation Basin 3: Other data → War chart
-• Operation Basin 4: Other data → War chart
-• Operation Basin 5: Other data → War chart
-• Operation Basin 6: Other data → War chart
-• Operation Basin 9: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Operation Basin 10: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Operation Basin 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Operation Basin 12N: Other data → War chart
-• Operation Basin 12S: Other data → War chart
-• Operation Basin 13N: Other data → War chart
-• Operation Basin 13S: Other data → War chart
-• Unnamed: 17: Other data → Histogram chart
-• Unnamed: 18: Other data → Histogram chart
-• Unnamed: 19: Other data → Histogram chart
-• Unnamed: 20: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Report
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
-• Unnamed: 1: Other data → War chart
-• Unnamed: 2: Other data → War chart
-• Unnamed: 3: Other data → War chart
-• Unnamed: 4: Other data → War chart
-• Unnamed: 5: Other data → War chart
-• Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → Histogram chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → War chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → Histogram chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → War chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Data
-• Timestamp: Late data → Histogram chart
-• MD30034A: Other data → War chart
-• AR42044FT: Other data → War chart
-• AR42069FT: Other data → War chart
-• AR42033AT: Other data → War chart
-• AR42034AT: Other data → War chart
-• CAR42057FT: Other data → War chart
-• Calculation: Other data → Histogram chart
-• MD03040A: Other data → War chart
-• Calculation.1: Other data → Histogram chart
-• Calculation.2: Other data → Histogram chart
-• MD03041A: Other data → War chart
-• Calculation.3: Other data → Histogram chart
-• Calculation.4: Other data → Histogram chart
-• MD08041A: Other data → War chart
-• MD25033A: Other data → War chart
-• Calculation.5: Other data → Histogram chart
-• Calculation.6: Other data → Histogram chart
-• MD01011A: Other data → War chart
-• Calculation.7: Other data → Histogram chart
-• Calculation.8: Other data → Histogram chart
-• Calculation.9: Other data → Histogram chart
-• Calculation.10: Other data → Histogram chart
-• MD01015A: Other data → War chart
-• MD01019A: Other data → War chart
-• MD01049A: Other data → War chart
-• MD11003A: Other data → War chart
-• MD11015A: Other data → War chart
-Mean=17548.58, Ltd=1537.41, Fig Dorr=0.59
-
-
-=== Aeration Basin 12S Report.xlsb ===
-
-📄 Sheet: Charts
-• Unnamed: 0: Other data → War chart
-• Operation Basin 1: Other data → War chart
-• Operation Basin 2: Other data → War chart
-• Operation Basin 3: Other data → War chart
-• Operation Basin 4: Other data → War chart
-• Operation Basin 5: Other data → War chart
-• Operation Basin 6: Other data → War chart
-• Operation Basin 9: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Operation Basin 10: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Operation Basin 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Operation Basin 12N: Other data → War chart
-• Operation Basin 12S: Other data → War chart
-• Operation Basin 13N: Other data → War chart
-• Operation Basin 13S: Other data → War chart
-• Unnamed: 17: Other data → Histogram chart
-• Unnamed: 18: Other data → Histogram chart
-• Unnamed: 19: Other data → Histogram chart
-• Unnamed: 20: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Report
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
-• Unnamed: 1: Other data → War chart
-• Unnamed: 2: Other data → War chart
-• Unnamed: 3: Other data → War chart
-• Unnamed: 4: Other data → War chart
-• Unnamed: 5: Other data → War chart
-• Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → Histogram chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → War chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → Histogram chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → War chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-Mean=nan, Ltd=nan, Fig Dorr=nan
-
-📄 Sheet: Data
-• Timestamp: Late data → Histogram chart
-• MD30047A: Other data → War chart
-• AR42043FT: Other data → War chart
-• AR14013FT: Other data → War chart
-• AR42047AT: Other data → War chart
-• AR42059AT: Other data → War chart
-• CAR42052FT: Other data → War chart
-• Calculation: Other data → Histogram chart
-• MD03019A: Other data → War chart
-• Calculation.1: Other data → Histogram chart
-• Calculation.2: Other data → Histogram chart
-• MD03020A: Other data → War chart
-• Calculation.3: Other data → Histogram chart
-• Calculation.4: Other data → Histogram chart
-• MD08014A: Other data → War chart
-• MD25022A: Other data → War chart
-• Calculation.5: Other data → Histogram chart
-• Calculation.6: Other data → Histogram chart
-• MD01011A: Other data → War chart
-• Calculation.7: Other data → Histogram chart
-• Calculation.8: Other data → Histogram chart
-• Calculation.9: Other data → Histogram chart
-• Calculation.10: Other data → Histogram chart
-• MD01015A: Other data → War chart
-• MD01019A: Other data → War chart
-• MD01049A: Other data → War chart
-• MD11003A: Other data → War chart
-• MD11015A: Other data → War chart
-Mean=15140.04, Ltd=22.95, Fig Dorr=0.62
-
-
-=== Plant Flow Report.xlsb ===
-⚠️ Failed to process sheet Charts: 'in' object has no attribute 'lower'
-
-📄 Sheet: Report
-• Unnamed: 0: Other data → War chart
-• Unnamed: 1: Other data → War chart
-• CITY of FORT WORTH WATER DEPARTMENT: Other data → War chart
-• Unnamed: 3: Other data → War chart
-• Unnamed: 4: Other data → War chart
-• Unnamed: 5: Other data → War chart
-• Unnamed: 6: Other data → War chart
-• Unnamed: 7: Other data → War chart
-• Unnamed: 8: Other data → War chart
-• Unnamed: 9: Other data → War chart
-• Unnamed: 10: Other data → War chart
-• Unnamed: 11: Other data → War chart
-• Unnamed: 12: Other data → War chart
-• Unnamed: 13: Other data → War chart
-• Unnamed: 14: Other data → War chart
-• Unnamed: 15: Other data → War chart
-• Unnamed: 16: Other data → War chart
-• Unnamed: 17: Other data → War chart
-• Unnamed: 18: Other data → War chart
-• Unnamed: 19: Other data → War chart
-• Unnamed: 20: Other data → War chart
-• Unnamed: 21: Other data → War chart
-• Unnamed: 22: Other data → War chart
-• Unnamed: 23: Other data → War chart
-• Unnamed: 24: Other data → War chart
-• Unnamed: 25: Other data → War chart
-• Unnamed: 26: Other data → War chart
-• Unnamed: 27: Other data → War chart
-• Unnamed: 28: Other data → War chart
-• Unnamed: 29: Other data → War chart
-• Unnamed: 30: Other data → War chart
-• Unnamed: 31: Other data → War chart
-• Unnamed: 32: Other data → War chart
-• Unnamed: 33: Other data → War chart
-• Unnamed: 34: Other data → War chart
-• Unnamed: 35: Other data → War chart
-• Unnamed: 36: Other data → War chart
-• Unnamed: 37: Other data → War chart
-• Unnamed: 38: Other data → War chart
-• Unnamed: 39: Other data → War chart
-• Unnamed: 40: Other data → War chart
-• Unnamed: 41: Other data → War chart
-• Unnamed: 42: Other data → War chart
-• Unnamed: 43: Other data → War chart
-• Unnamed: 44: Other data → Histogram chart
-• Web 24, 2024 - Plant Fewer 1 Peter back in service: Other data → Histogram chart
-• Unnamed: 46: Other data → Histogram chart
-• Unnamed: 47: Other data → Histogram chart
-• Unnamed: 48: Other data → War chart
-• Unnamed: 49: Other data → War chart
-Mean=6.42, Ltd=1.86, Fig Dorr=0.98
 
 📄 Sheet: Data
 • Unnamed: 0: Other data → Histogram chart
-• C103ABH01: Other data → War chart
-• C406CCH01: Other data → War chart
-• C406CDH01: Other data → War chart
-• AR35004FT: Other data → War chart
-• MAR35004FT: Other data → War chart
-• C406CAH01: Other data → War chart
-• C406CBH01: Other data → War chart
-• AR35003FT: Other data → War chart
-• MAR35003FT: Other data → War chart
-• AR00016FT: Other data → War chart
-• MBOXUFLO2: Other data → War chart
-• MD39051A: Other data → War chart
-• MD39050A: Other data → War chart
-• AR27002FT: Other data → War chart
-• Calculation: Other data → Histogram chart
-• Calculation.1: Other data → Histogram chart
-• Calculation.2: Other data → Histogram chart
-• AR16094FT: Other data → War chart
-• AR32071FT: Other data → War chart
-• AR32112FT: Other data → War chart
-• AR53001FT: Other data → War chart
-• AR53002FT: Other data → War chart
-• Calculation.3: Other data → Histogram chart
-• MD32022A: Other data → War chart
-• AR32071FT.1: Other data → War chart
-• AR65009FT: Other data → War chart
-• AR65010FT: Other data → War chart
-• AR65011FT: Other data → War chart
-• C103ABH01.1: Other data → War chart
-• AR05032FT: Other data → War chart
-• AR04039FT: Other data → War chart
-• AR04040FT: Other data → War chart
-• C103ACC01: Other data → War chart
-• C103ACD01: Other data → War chart
-• DR53404ZD: Other data → War chart
-• DR53405ZB: Other data → War chart
-• AR50005FT: Other data → War chart
-• AR50006FT: Other data → War chart
-• DR50404MM: Other data → War chart
-• DR50405MM: Other data → War chart
-• AR50004FT: Other data → War chart
-• AR00015FT: Other data → War chart
-• AR101001FT: Other data → War chart
-• AR101002FT: Other data → War chart
-• AR09014FT: Other data → War chart
-• AR06019FT: Other data → War chart
-• AR16071FT: Other data → War chart
-• AR00010FT: Other data → War chart
-Mean=9226.23, Ltd=9.86, Fig Dorr=0.56
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45762.50, Ltd=8.80, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Aug_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45885.00, Ltd=9.09, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Feb_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45702.50, Ltd=8.23, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Jan_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45673.00, Ltd=9.09, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Jul_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45854.00, Ltd=9.09, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Jun_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45823.50, Ltd=8.80, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Mar_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45732.00, Ltd=9.09, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_May_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45793.00, Ltd=9.09, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Oct_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45943.50, Ltd=7.65, Fig Dorr=1.00
+
+
+=== OV_Dig_Gas_Prod_Dryer_Usage_Sep_2025.xlsb ===
+
+📄 Sheet: Report
+• Unnamed: 0: Other data → War chart
+• Unnamed: 1: Other data → War chart
+• Unnamed: 2: Other data → War chart
+• Unnamed: 3: Other data → War chart
+• Unnamed: 4: Other data → War chart
+• Unnamed: 5: Other data → War chart
+• Unnamed: 6: Other data → War chart
+
+📄 Sheet: Data
+• Unnamed: 0: Other data → Histogram chart
+• AR47018FT: Other data → War chart
+• AR47021FT: Other data → War chart
+• AR47022FT: Other data → War chart
+• DELETED: Other data → War chart
+• AR47001FT: Other data → War chart
+• AR48001FT: Other data → War chart
+Mean=45915.50, Ltd=8.80, Fig Dorr=1.00
