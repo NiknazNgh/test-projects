@@ -1,9 +1,0 @@
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Jan_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Feb_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Feb_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Mar_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Mar_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Apr_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Apr_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_May_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_May_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Jun_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Jun_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Jul_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Jul_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Aug_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Aug_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Sep_2025.also.
-In sheet 'data', Unnamed: 0 increased by 0.1% from OV_Dig_Gas_Prod_Dryer_Usage_Sep_2025.also to OV_Dig_Gas_Prod_Dryer_Usage_Oct_2025.also.
