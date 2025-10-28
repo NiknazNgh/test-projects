@@ -13,8 +13,7 @@ SUMMARY = r"C:\Users\NEGAHDN\Downloads\test projects\excel-ai-assistant\AI_Trend
 os.makedirs(REPORTS, exist_ok=True)
 os.makedirs(CHARTS, exist_ok=True)
 
-# --- helpers ---------------------------------------------------------
-
+# Month detection
 month_map = {m.lower(): i for i,m in enumerate(
     ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"], start=1)}
 
@@ -22,20 +21,30 @@ def extract_month(fname):
     for m in month_map:
         if m in fname.lower():
             return month_map[m]
-    # fallback to number if present
     nums = re.findall(r"\d+", fname)
     return int(nums[0]) if nums else 0
 
-def read_any_excel(path):
-    if path.lower().endswith(".xlsb"):
-        return pd.read_excel(path, engine="pyxlsb")
-    return pd.read_excel(path)
-
-# --- main analysis ---------------------------------------------------
+def read_excel_sheets(path):
+    """Read all sheets in an Excel file into a dict of DataFrames."""
+    try:
+        if path.lower().endswith(".xlsb"):
+            xls = pd.ExcelFile(path, engine="pyxlsb")
+        else:
+            xls = pd.ExcelFile(path)
+        sheets = {}
+        for sheet in xls.sheet_names:
+            try:
+                df = pd.read_excel(xls, sheet_name=sheet)
+                if not df.empty:
+                    sheets[sheet.lower()] = df
+            except Exception:
+                continue
+        return sheets
+    except Exception:
+        return {}
 
 def compare_trends():
-    files = [f for f in os.listdir(REPORTS)
-             if f.lower().endswith((".xlsx",".xls",".xlsb"))]
+    files = [f for f in os.listdir(REPORTS) if f.lower().endswith((".xlsx",".xls",".xlsb"))]
     if not files:
         print("💤 No Excel files found.")
         return
@@ -47,56 +56,57 @@ def compare_trends():
         f_prev, f_curr = files[i-1], files[i]
         print(f"📊 Comparing {f_prev} → {f_curr}")
 
-        try:
-            df1, df2 = read_any_excel(os.path.join(REPORTS, f_prev)), \
-                       read_any_excel(os.path.join(REPORTS, f_curr))
-        except Exception as e:
-            ai_lines.append(f"⚠️ Failed reading {f_curr}: {e}")
-            continue
+        sheets_prev = read_excel_sheets(os.path.join(REPORTS, f_prev))
+        sheets_curr = read_excel_sheets(os.path.join(REPORTS, f_curr))
 
-        # numeric intersection
-        common_cols = [c for c in df1.columns if c in df2.columns
-                       and pd.api.types.is_numeric_dtype(df1[c])
-                       and pd.api.types.is_numeric_dtype(df2[c])]
-        if not common_cols:
-            ai_lines.append(f"No numeric overlap between {f_prev} and {f_curr}.")
-            continue
+        shared_sheets = [s for s in sheets_prev if s in sheets_curr]
 
-        for c in common_cols:
-            v1, v2 = df1[c].mean(skipna=True), df2[c].mean(skipna=True)
-            if v1 == 0 or np.isnan(v1) or np.isnan(v2): 
+        for sheet in shared_sheets:
+            df1, df2 = sheets_prev[sheet], sheets_curr[sheet]
+
+            # find common numeric columns
+            numeric1 = df1.select_dtypes(include=np.number)
+            numeric2 = df2.select_dtypes(include=np.number)
+            common_cols = [c for c in numeric1.columns if c in numeric2.columns]
+            if not common_cols:
                 continue
-            change = ((v2 - v1) / v1) * 100
-            trend_records.append({
-                "Metric": c,
-                "From": f_prev,
-                "To": f_curr,
-                "Change_%": round(change, 2)
-            })
 
-            direction = "increased" if change > 0 else "decreased"
-            ai_lines.append(f"{c} {direction} by {abs(change):.1f}% from {f_prev} to {f_curr}.")
+            for c in common_cols:
+                v1 = numeric1[c].mean(skipna=True)
+                v2 = numeric2[c].mean(skipna=True)
+                if np.isnan(v1) or np.isnan(v2) or v1 == 0:
+                    continue
+                change = ((v2 - v1) / v1) * 100
+                trend_records.append({
+                    "Sheet": sheet,
+                    "Metric": c,
+                    "From": f_prev,
+                    "To": f_curr,
+                    "Change_%": round(change, 2)
+                })
+                direction = "increased" if change > 0 else "decreased"
+                ai_lines.append(f"In sheet '{sheet}', {c} {direction} by {abs(change):.1f}% from {f_prev} to {f_curr}.")
 
     if not trend_records:
-        print("⚠️ No trends computed.")
+        print("⚠️ No trends computed. Check that numeric columns overlap across months.")
         return
 
+    # Create DataFrame
     trends = pd.DataFrame(trend_records)
     trends.to_excel(OUTPUT, index=False)
 
-    # --- plot trends ---
-    plt.figure(figsize=(9,5))
-    sns.barplot(data=trends, x="Metric", y="Change_%", hue="To")
+    # Visualization
+    plt.figure(figsize=(10,5))
+    sns.barplot(data=trends, x="Metric", y="Change_%", hue="Sheet")
     plt.xticks(rotation=45, ha="right")
     plt.axhline(0, color="black", lw=0.8)
-    plt.title("Month-to-Month % Change")
+    plt.title("Month-to-Month % Change by Sheet")
     plt.tight_layout()
     plt.savefig(os.path.join(CHARTS, "Trend_Comparison.png"), dpi=200)
     plt.close()
 
-    # --- AI style summary ---
-    text = "\n".join(ai_lines)
-    ai_summary = TextBlob(text).correct()
+    # AI-style summary
+    ai_summary = TextBlob("\n".join(ai_lines)).correct()
     with open(SUMMARY, "w", encoding="utf-8") as f:
         f.write(str(ai_summary))
 
@@ -104,6 +114,5 @@ def compare_trends():
     print(f"🧠 AI summary saved to {SUMMARY}")
     print(f"📉 Chart → {os.path.join(CHARTS, 'Trend_Comparison.png')}")
 
-# --- run -------------------------------------------------------------
 if __name__ == "__main__":
     compare_trends()
