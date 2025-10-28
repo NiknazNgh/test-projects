@@ -1,0 +1,1 @@
+The dataset contains 1271 rows across 70 columns. Average value across numerical columns is 105020.20. Total sum of all numerical data points is 2,546,828. 'of' shows the highest amiability among numerical fields. Overall, the data suggests a moderate amiability with key relationships among major performance indicator. Values appear generally stable with some outlines.
