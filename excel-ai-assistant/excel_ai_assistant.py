@@ -5,37 +5,50 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from textblob import TextBlob
 
+# Paths
 REPORTS = r"C:\Users\NEGAHDN\Downloads\test projects\excel-ai-assistant\Reports"
 CHARTS = r"C:\Users\NEGAHDN\Downloads\test projects\excel-ai-assistant\Charts"
 SUMMARY = r"C:\Users\NEGAHDN\Downloads\test projects\excel-ai-assistant\Summary.txt"
 
+# Ensure folders exist
 os.makedirs(REPORTS, exist_ok=True)
 os.makedirs(CHARTS, exist_ok=True)
 
+
+# === Classification helpers ===
 def classify_column(col):
-    """Roughly guess what a column represents based on its name."""
+    """Guess what a column represents based on its name."""
     name = col.lower()
-    if any(x in name for x in ["cost","price","budget","expense"]): return "Finance"
-    if any(x in name for x in ["flow","pressure","rate","volume"]): return "Operations"
-    if any(x in name for x in ["chlorine","ph","turbidity","chemical"]): return "Chemistry"
-    if any(x in name for x in ["energy","power","kw","kwh"]): return "Energy"
-    if any(x in name for x in ["date","month","time"]): return "Date"
+    if any(x in name for x in ["cost", "price", "budget", "expense"]):
+        return "Finance"
+    if any(x in name for x in ["flow", "pressure", "rate", "volume"]):
+        return "Operations"
+    if any(x in name for x in ["chlorine", "ph", "turbidity", "chemical"]):
+        return "Chemistry"
+    if any(x in name for x in ["energy", "power", "kw", "kwh"]):
+        return "Energy"
+    if any(x in name for x in ["date", "month", "time"]):
+        return "Date"
     return "Other"
 
+
 def recommend_chart(dtype, topic):
-    """Suggest chart type."""
+    """Recommend chart type based on data type + topic."""
     if dtype == "number":
-        if topic in ["Finance","Operations","Energy"]: return "Line"
-        if topic == "Chemistry": return "Scatter"
+        if topic in ["Finance", "Operations", "Energy"]:
+            return "Line"
+        if topic == "Chemistry":
+            return "Scatter"
         return "Histogram"
     elif dtype == "category":
         return "Bar"
     else:
         return "CountPlot"
 
-def analyze_excel(path):
+
+# === Core Analysis ===
+def analyze_excel(path, df):
     print(f"📄 Analyzing {os.path.basename(path)}")
-    df = pd.read_excel(path)
     summary_lines = []
 
     for col in df.columns:
@@ -45,7 +58,7 @@ def analyze_excel(path):
         summary_lines.append(f"• {col}: {topic} data → recommended chart: {chart_type}")
 
         # Auto-plot
-        plt.figure(figsize=(6,4))
+        plt.figure(figsize=(6, 4))
         try:
             if chart_type == "Line":
                 plt.plot(df[col])
@@ -64,26 +77,40 @@ def analyze_excel(path):
         except Exception as e:
             summary_lines.append(f"⚠️ Could not plot {col}: {e}")
 
-    # basic numeric summary
+    # Numeric summary
     numeric_cols = df.select_dtypes(include=np.number)
     if not numeric_cols.empty:
         mean_val = numeric_cols.mean().mean()
         corr_val = numeric_cols.corr().abs().mean().mean()
+        max_col = numeric_cols.mean().idxmax()
+        min_col = numeric_cols.mean().idxmin()
         summary_lines.append(f"Average numeric mean: {mean_val:.2f}, avg correlation: {corr_val:.2f}")
+        summary_lines.append(f"Highest average column: {max_col}")
+        summary_lines.append(f"Lowest average column: {min_col}")
 
     text = "\n".join(summary_lines)
     blob = TextBlob(text).correct()
     return str(blob)
 
+
+# === Main Runner ===
 if __name__ == "__main__":
     full_report = []
     for file in os.listdir(REPORTS):
-        if file.endswith((".xlsx",".xls")):
-            summary = analyze_excel(os.path.join(REPORTS,file))
-            full_report.append(f"\n=== {file} ===\n{summary}\n")
+        if file.lower().endswith((".xlsx", ".xls", ".xlsb")):
+            path = os.path.join(REPORTS, file)
+            try:
+                if file.lower().endswith(".xlsb"):
+                    df = pd.read_excel(path, engine="pyxlsb")
+                else:
+                    df = pd.read_excel(path)
+                summary = analyze_excel(path, df)
+                full_report.append(f"\n=== {file} ===\n{summary}\n")
+            except Exception as e:
+                print(f"⚠️ Error reading {file}: {e}")
 
     if full_report:
-        with open(SUMMARY,"w",encoding="utf-8") as f:
+        with open(SUMMARY, "w", encoding="utf-8") as f:
             f.write("\n".join(full_report))
         print(f"\n✅ Analysis complete. Charts → {CHARTS}")
         print(f"🧠 Summary → {SUMMARY}")

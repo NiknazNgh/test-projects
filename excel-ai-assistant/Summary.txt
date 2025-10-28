@@ -1,0 +1,134 @@
+
+=== Aeration Basin 1 Report.xlsb ===
+• Unnamed: 0: Other data → recommended chart: War
+• Operation Basin 1: Other data → recommended chart: War
+• Operation Basin 2: Other data → recommended chart: War
+• Operation Basin 3: Other data → recommended chart: War
+• Operation Basin 4: Other data → recommended chart: War
+• Operation Basin 5: Other data → recommended chart: War
+• Operation Basin 6: Other data → recommended chart: War
+• Operation Basin 9: Other data → recommended chart: War
+• Unnamed: 8: Other data → recommended chart: War
+• Operation Basin 10: Other data → recommended chart: War
+• Unnamed: 10: Other data → recommended chart: War
+• Operation Basin 11: Other data → recommended chart: War
+• Unnamed: 12: Other data → recommended chart: War
+• Operation Basin 12N: Other data → recommended chart: War
+• Operation Basin 12S: Other data → recommended chart: War
+• Operation Basin 13N: Other data → recommended chart: War
+• Operation Basin 13S: Other data → recommended chart: War
+• Unnamed: 17: Other data → recommended chart: Histogram
+• Unnamed: 18: Other data → recommended chart: Histogram
+• Unnamed: 19: Other data → recommended chart: Histogram
+• Unnamed: 20: Other data → recommended chart: War
+Average numerical mean: nan, ave correlation: nan
+Highest average column: nan
+Lowest average column: nan
+
+
+=== Aeration Basin 10 Report.xlsb ===
+• Unnamed: 0: Other data → recommended chart: War
+• Operation Basin 1: Other data → recommended chart: War
+• Operation Basin 2: Other data → recommended chart: War
+• Operation Basin 3: Other data → recommended chart: War
+• Operation Basin 4: Other data → recommended chart: War
+• Operation Basin 5: Other data → recommended chart: War
+• Operation Basin 6: Other data → recommended chart: War
+• Operation Basin 9: Other data → recommended chart: War
+• Unnamed: 8: Other data → recommended chart: War
+• Operation Basin 10: Other data → recommended chart: War
+• Unnamed: 10: Other data → recommended chart: War
+• Operation Basin 11: Other data → recommended chart: War
+• Unnamed: 12: Other data → recommended chart: War
+• Operation Basin 12N: Other data → recommended chart: War
+• Operation Basin 12S: Other data → recommended chart: War
+• Operation Basin 13N: Other data → recommended chart: War
+• Operation Basin 13S: Other data → recommended chart: War
+• Unnamed: 17: Other data → recommended chart: Histogram
+• Unnamed: 18: Other data → recommended chart: Histogram
+• Unnamed: 19: Other data → recommended chart: Histogram
+• Unnamed: 20: Other data → recommended chart: War
+Average numerical mean: nan, ave correlation: nan
+Highest average column: nan
+Lowest average column: nan
+
+
+=== Aeration Basin 11 Report.xlsb ===
+• Unnamed: 0: Other data → recommended chart: War
+• Operation Basin 1: Other data → recommended chart: War
+• Operation Basin 2: Other data → recommended chart: War
+• Operation Basin 3: Other data → recommended chart: War
+• Operation Basin 4: Other data → recommended chart: War
+• Operation Basin 5: Other data → recommended chart: War
+• Operation Basin 6: Other data → recommended chart: War
+• Operation Basin 9: Other data → recommended chart: War
+• Unnamed: 8: Other data → recommended chart: War
+• Operation Basin 10: Other data → recommended chart: War
+• Unnamed: 10: Other data → recommended chart: War
+• Operation Basin 11: Other data → recommended chart: War
+• Unnamed: 12: Other data → recommended chart: War
+• Operation Basin 12N: Other data → recommended chart: War
+• Operation Basin 12S: Other data → recommended chart: War
+• Operation Basin 13N: Other data → recommended chart: War
+• Operation Basin 13S: Other data → recommended chart: War
+• Unnamed: 17: Other data → recommended chart: Histogram
+• Unnamed: 18: Other data → recommended chart: Histogram
+• Unnamed: 19: Other data → recommended chart: Histogram
+• Unnamed: 20: Other data → recommended chart: War
+Average numerical mean: nan, ave correlation: nan
+Highest average column: nan
+Lowest average column: nan
+
+
+=== Aeration Basin 12N Report.xlsb ===
+• Unnamed: 0: Other data → recommended chart: War
+• Operation Basin 1: Other data → recommended chart: War
+• Operation Basin 2: Other data → recommended chart: War
+• Operation Basin 3: Other data → recommended chart: War
+• Operation Basin 4: Other data → recommended chart: War
+• Operation Basin 5: Other data → recommended chart: War
+• Operation Basin 6: Other data → recommended chart: War
+• Operation Basin 9: Other data → recommended chart: War
+• Unnamed: 8: Other data → recommended chart: War
+• Operation Basin 10: Other data → recommended chart: War
+• Unnamed: 10: Other data → recommended chart: War
+• Operation Basin 11: Other data → recommended chart: War
+• Unnamed: 12: Other data → recommended chart: War
+• Operation Basin 12N: Other data → recommended chart: War
+• Operation Basin 12S: Other data → recommended chart: War
+• Operation Basin 13N: Other data → recommended chart: War
+• Operation Basin 13S: Other data → recommended chart: War
+• Unnamed: 17: Other data → recommended chart: Histogram
+• Unnamed: 18: Other data → recommended chart: Histogram
+• Unnamed: 19: Other data → recommended chart: Histogram
+• Unnamed: 20: Other data → recommended chart: War
+Average numerical mean: nan, ave correlation: nan
+Highest average column: nan
+Lowest average column: nan
+
+
+=== Aeration Basin 12S Report.xlsb ===
+• Unnamed: 0: Other data → recommended chart: War
+• Operation Basin 1: Other data → recommended chart: War
+• Operation Basin 2: Other data → recommended chart: War
+• Operation Basin 3: Other data → recommended chart: War
+• Operation Basin 4: Other data → recommended chart: War
+• Operation Basin 5: Other data → recommended chart: War
+• Operation Basin 6: Other data → recommended chart: War
+• Operation Basin 9: Other data → recommended chart: War
+• Unnamed: 8: Other data → recommended chart: War
+• Operation Basin 10: Other data → recommended chart: War
+• Unnamed: 10: Other data → recommended chart: War
+• Operation Basin 11: Other data → recommended chart: War
+• Unnamed: 12: Other data → recommended chart: War
+• Operation Basin 12N: Other data → recommended chart: War
+• Operation Basin 12S: Other data → recommended chart: War
+• Operation Basin 13N: Other data → recommended chart: War
+• Operation Basin 13S: Other data → recommended chart: War
+• Unnamed: 17: Other data → recommended chart: Histogram
+• Unnamed: 18: Other data → recommended chart: Histogram
+• Unnamed: 19: Other data → recommended chart: Histogram
+• Unnamed: 20: Other data → recommended chart: War
+Average numerical mean: nan, ave correlation: nan
+Highest average column: nan
+Lowest average column: nan
