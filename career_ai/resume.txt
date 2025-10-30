@@ -1,0 +1,31 @@
+Niknaz Negahdarhaghighat
+(206) 746-9546 | Niknaz.Negahdarhaghighat@fortworthtexas.gov 
+ Linkedin.com/in/NiknazNgh| Github.com/NiknazNgh
+Professional Experience
+Business Process Analyst — City of Fort Worth | Fort Worth, TX | Jun 2025 – Present
+•	Built Python + Excel/COM automations for monthly/daily reporting with weekday/holiday logic, cutting prep time ~90% and stabilizing delivery.
+•	Designed Python ETL to normalize multi-site chemical/energy/flow datasets; added schema/type contracts and unit/timestamp validation to raise month-close accuracy and eliminate manual entry.
+•	Repaired brittle report dependencies; introduced basic unit tests and audit logs to improve data reliability and traceability.
+•	Delivered multi-page Power Apps (SharePoint lists, JSON column formatting, attachments) to standardize CIP/PIF workflows and metadata.
+Data Science Intern — City of Fort Worth | Fort Worth, TX | Mar 2025 – Jun 2025
+•	Shipped Holt-Winters/ARIMA forecasting pipeline (Python/statsmodels) for city operations; +25% accuracy, fewer late-cycle revisions.
+•	Built Streamlit + PyDeck dashboard mapping affordability by income/household; enabled exploratory policy analysis.
+•	Performed cross-department spend analysis, flagging late-year surges; insights informed FY2026 pacing.
+Graduate Research Assistant — UTA | Arlington, TX | Mar 2024 – May 2025
+•	Trained ResNet-style CNNs in PyTorch for speech-emotion; Optuna tuning lifted F1 from 72% → 87% (RAVDESS).
+•	Used CVXPY with MLP/Ridge/RF to shift loads on UCI power data, simulating 8% peak-cost reduction.
+TECHNICAL SKILLS
+•	Languages/Tools: Python (pandas, NumPy, scikit-learn, statsmodels, openpyxl, pyxlsb), SQL (SQL Server), Power BI/DAX, Excel/VBA, Git, Bash
+•	ML & Stats: Time series (ARIMA, Holt-Winters/Prophet), regression/classification, hypothesis testing, feature engineering, model evaluation
+•	Data Eng/Ops: ETL design, report automation, scheduling, Excel COM, schema contracts, unit/integration testing
+•	Visualization/Apps: Power BI, Plotly/Matplotlib, Streamlit, Power Query
+•	Soft Skills: Analytical Thinking, Problem-Solving, SOP Documentation, Cross-functional Communication
+•	Languages: English & Persian (Fluent)
+EDUCATION
+•	Master of Science in Applied Statistics & Data Science - University of Texas at Arlington | Arlington, TX | 	Graduated with Honors | GPA: 4.0 / 4.0   | 2025
+•	Bachelor of Science in Civil Engineering - Azad University | Graduated with Honors | GPA: 4.0 / 4.0 | 2016
+CERTIFICATIONS & AWARDS
+•	Meta Database Engineer Professional Certificate - 2024
+•	Google Data Analytics Professional Certificate - 2025
+•	Best Presentation Award, University of Texas at Arlington – Spring 2025
+Optimization & Big Data Analytics, Deep Learning & Neural Networks, Applied Time-Series Analysis 
