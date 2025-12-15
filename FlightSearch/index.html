@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Cheapest Flights</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        /* Style for the loading/no results container */
+        #results-container {
+            min-height: 200px;
+        }
+        /* Custom Scrollbar for the container */
+        .flight-list-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        .flight-list-container::-webkit-scrollbar-thumb {
+            background-color: #9ca3af;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-10 p-6 bg-white rounded-xl shadow-lg">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-blue-800 tracking-tight">
+                ✈️ Smart Flight Search Results
+            </h1>
+            <p id="search-summary" class="mt-2 text-lg text-gray-600 font-medium"></p>
+        </header>
+
+        <main id="results-container" class="space-y-6">
+            <div id="loading-spinner" class="text-center p-10">
+                <div class="animate-spin h-10 w-10 border-4 border-blue-500 border-t-transparent rounded-full mx-auto"></div>
+                <p class="mt-4 text-gray-500">Filtering and sorting flights...</p>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
+            <p>
+                Disclaimer: This uses **MOCK DATA** within a structured API fetch pattern. For real prices, you must replace the API placeholders below and handle the actual fetch response.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // --- API Configuration (PLACEHOLDERS) ---
+        // REPLACE THESE WITH YOUR ACTUAL FLIGHT API KEY AND ENDPOINT
+        const API_KEY = "YOUR_REAL_API_KEY";
+        const API_ENDPOINT = "https://api.example-flight-service.com/search";
+        const MAX_RETRIES = 3;
+
+        // --- Search Parameters ---
+        const ORIGIN = "DFW";
+        const DESTINATION = "SJC";
+        const DEPART_DATE = "2026-01-16";
+        const RETURN_DATE = "2026-01-19";
+        const MIN_DEPART_HOUR = 14; // 2 PM
+        const MAX_DURATION_HOURS = 8;
+        const MAX_FLIGHTS_TO_RETURN = 5;
+
+        // Mock Data (Used to simulate the successful API response payload)
+        const mockApiPayload = [
+            // Cheap, but fails the DFW -> SJC 2 PM rule (departs at 10:00)
+            {'id': 1, 'price': 350.00, 'outbound': {'departureTime': '2026-01-16T10:00:00', 'durationSeconds': 21600}, 'inbound': {'departureTime': '2026-01-19T08:00:00', 'durationSeconds': 18000}},
+            // Passes all rules, duration < 8h
+            {'id': 2, 'price': 420.50, 'outbound': {'departureTime': '2026-01-16T16:30:00', 'durationSeconds': 25200}, 'inbound': {'departureTime': '2026-01-19T10:00:00', 'durationSeconds': 23400}},
+            // Cheap, but fails the duration rule (10 hours)
+            {'id': 3, 'price': 399.00, 'outbound': {'departureTime': '2026-01-16T15:00:00', 'durationSeconds': 36000}, 'inbound': {'departureTime': '2026-01-19T18:00:00', 'durationSeconds': 14400}},
+            // Passes all rules
+            {'id': 4, 'price': 415.75, 'outbound': {'departureTime': '2026-01-16T18:15:00', 'durationSeconds': 24000}, 'inbound': {'departureTime': '2026-01-19T12:00:00', 'durationSeconds': 26000}},
+            // Passes all rules
+            {'id': 5, 'price': 450.00, 'outbound': {'departureTime': '2026-01-16T14:05:00', 'durationSeconds': 18000}, 'inbound': {'departureTime': '2026-01-19T15:00:00', 'durationSeconds': 20000}},
+            // Passes all rules
+            {'id': 6, 'price': 418.00, 'outbound': {'departureTime': '2026-01-16T19:00:00', 'durationSeconds': 20000}, 'inbound': {'departureTime': '2026-01-19T16:00:00', 'durationSeconds': 19000}},
+            // Passes all rules
+            {'id': 7, 'price': 430.00, 'outbound': {'departureTime': '2026-01-16T15:00:00', 'durationSeconds': 22000}, 'inbound': {'departureTime': '2026-01-19T09:00:00', 'durationSeconds': 21000}},
+            // Another one that fails 2 PM rule
+            {'id': 8, 'price': 405.00, 'outbound': {'departureTime': '2026-01-16T12:00:00', 'durationSeconds': 24000}, 'inbound': {'departureTime': '2026-01-19T11:00:00', 'durationSeconds': 24000}},
+        ];
+
+        // --- API Integration Functions (Simulated) ---
+
+        async function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function fetchFlightsFromAPI(attempt = 0) {
+            const endpoint = API_ENDPOINT;
+            // Add any other required parameters (e.g., max stops, cabin class) here if needed
+            const queryParams = {
+                key: API_KEY,
+                origin: ORIGIN,
+                destination: DESTINATION,
+                departDate: DEPART_DATE,
+                returnDate: RETURN_DATE,
+            };
+
+            // --- REAL FETCH LOGIC (Commented out, use this when you have an API) ---
+            /*
+            try {
+                const url = new URL(endpoint);
+                url.search = new URLSearchParams(queryParams).toString();
+
+                const response = await fetch(url);
+
+                if (!response.ok) {
+                    if (response.status === 429 && attempt < MAX_RETRIES) {
+                        // Rate limit error (429) -> trigger exponential backoff
+                        const delay = Math.pow(2, attempt) * 1000; // 1s, 2s, 4s...
+                        await sleep(delay);
+                        console.warn(`Retry attempt ${attempt + 1}/${MAX_RETRIES} after ${delay}ms delay...`);
+                        return fetchFlightsFromAPI(attempt + 1);
+                    }
+                    throw new Error(`API returned status ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                // Assuming the API returns a list of itineraries directly under 'itineraries'
+                return data.itineraries || []; 
+
+            } catch (error) {
+                console.error("Flight API Fetch Error:", error);
+                throw new Error("Failed to retrieve flight data after all attempts.");
+            }
+            */
+
+            // --- MOCK API SIMULATION (Returns mock data after a delay) ---
+            if (attempt >= MAX_RETRIES) {
+                // Fail the simulation after max retries
+                console.error("MOCK API Simulation Failed: Max retries exceeded.");
+                throw new Error("MOCK API Simulation Failed.");
+            }
+
+            // Simulate network latency (200ms to 1000ms)
+            const latency = 200 + Math.random() * 800;
+            await sleep(latency);
+
+            // Simulate success 
+            console.log("MOCK API Simulation Success.");
+            return mockApiPayload;
+        }
+
+
+        // --- Helper Functions (No changes needed, they use the data structure) ---
+
+        function formatTime(timestamp) {
+            /** Converts a timestamp string to a readable HH:MM format. */
+            try {
+                const dt = new Date(timestamp);
+                // Use locale-specific formatting for time (e.g., 24h format for simplicity)
+                return dt.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+            } catch (e) {
+                return "N/A";
+            }
+        }
+
+        function formatDuration(seconds) {
+            /** Converts duration in seconds to Hh Mm format. */
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            return `${hours}h ${minutes}m`;
+        }
+
+        function isSegmentValid(flightSegment, direction) {
+            /** Checks if a single flight segment meets the user's constraints. */
+            try {
+                const departDt = new Date(flightSegment.departureTime);
+                const departHour = departDt.getHours();
+
+                const durationHours = flightSegment.durationSeconds / 3600;
+
+                let timeOk = true;
+                if (direction === 'outbound' && departHour < MIN_DEPART_HOUR) {
+                    timeOk = false;
+                }
+
+                const durationOk = durationHours < MAX_DURATION_HOURS;
+
+                return { timeOk, durationOk, is_valid: timeOk && durationOk };
+            } catch (e) {
+                console.error("Error processing flight segment:", e);
+                return { timeOk: false, durationOk: false, is_valid: false };
+            }
+        }
+
+        async function runFlightSearch() {
+            /** Fetches, filters, sorts, and selects the top N cheapest valid flights. */
+            let rawResults = [];
+            try {
+                // 1. Fetch Data from (Simulated) API
+                rawResults = await fetchFlightsFromAPI();
+            } catch (error) {
+                console.error("Fatal Search Error:", error.message);
+                displayError("There was an issue fetching flight data. Check your API configuration and connection.");
+                return;
+            }
+
+            // 2. Filter the Results
+            const filteredItineraries = rawResults.filter(itinerary => {
+                const outboundValidation = isSegmentValid(itinerary.outbound, 'outbound');
+                const inboundValidation = isSegmentValid(itinerary.inbound, 'inbound');
+
+                // Check if BOTH the outbound and inbound flights meet the criteria
+                return outboundValidation.is_valid && inboundValidation.is_valid;
+            });
+
+            // 3. Sort by Price (Cheapest first)
+            const sortedItineraries = filteredItineraries.sort((a, b) => a.price - b.price);
+
+            // 4. Select the Top N
+            const topItineraries = sortedItineraries.slice(0, MAX_FLIGHTS_TO_RETURN).map((flight, index) => ({
+                ...flight,
+                rank: index + 1
+            }));
+
+            displayResults(topItineraries);
+        }
+
+        function createFlightCard(flight) {
+            /** Generates the HTML string for a single flight card. */
+            const outboundValidation = isSegmentValid(flight.outbound, 'outbound');
+            const inboundValidation = isSegmentValid(flight.inbound, 'inbound');
+
+            const renderSegment = (segment, validation, direction, date, isOutbound) => {
+                const time = formatTime(segment.departureTime);
+                const duration = formatDuration(segment.durationSeconds);
+                const isPassingTime = validation.timeOk;
+                const isPassingDuration = validation.durationOk;
+
+                const directionText = isOutbound ? `${ORIGIN} → ${DESTINATION}` : `${DESTINATION} → ${ORIGIN}`;
+                const timeConstraint = isOutbound ? `After ${MIN_DEPART_HOUR}:00` : 'No time constraint';
+
+                return `
+                    <div class="flex flex-col space-y-1 p-3 ${isOutbound ? 'bg-blue-50/50' : 'bg-gray-50/50'} rounded-lg">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-semibold text-gray-800">${directionText}</h3>
+                            <span class="text-sm font-medium text-gray-500">${date}</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <!-- Departure Time -->
+                            <div class="text-xl font-bold text-gray-900">
+                                ${time}
+                            </div>
+                            <!-- Duration -->
+                            <div class="text-sm text-gray-600">
+                                <span class="font-semibold text-blue-600">Duration:</span> ${duration}
+                            </div>
+                        </div>
+                        <div class="flex space-x-2 mt-1 text-xs">
+                            ${isOutbound ? `
+                                <span class="px-2 py-0.5 rounded-full ${isPassingTime ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'} font-medium">
+                                    ${isPassingTime ? 'Time OK' : 'TIME FAIL'} (${timeConstraint})
+                                </span>
+                            ` : ''}
+                            <span class="px-2 py-0.5 rounded-full ${isPassingDuration ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'} font-medium">
+                                ${isPassingDuration ? 'Duration OK' : 'DURATION FAIL'} (< ${MAX_DURATION_HOURS}h)
+                            </span>
+                        </div>
+                    </div>
+                `;
+            };
+
+            return `
+                <div class="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl font-extrabold text-blue-700 bg-blue-100 rounded-full h-10 w-10 flex items-center justify-center">${flight.rank}</span>
+                            <h2 class="text-2xl font-bold text-gray-900">Itinerary Rank #${flight.rank}</h2>
+                        </div>
+                        <span class="text-3xl font-extrabold text-green-600 p-2 rounded-lg bg-green-50 shadow-inner">
+                            $${flight.price.toFixed(2)}
+                        </span>
+                    </div>
+
+                    <div class="space-y-4">
+                        ${renderSegment(flight.outbound, outboundValidation, 'outbound', DEPART_DATE, true)}
+                        ${renderSegment(flight.inbound, inboundValidation, 'inbound', RETURN_DATE, false)}
+                    </div>
+
+                    <button class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition duration-150 shadow-md hover:shadow-lg">
+                        Book This Flight (Mock Action)
+                    </button>
+                </div>
+            `;
+        }
+
+        function displayResults(itineraries) {
+            /** Renders the results to the DOM. */
+            const container = document.getElementById('results-container');
+            container.innerHTML = ''; // Clear loading spinner
+
+            const summaryElement = document.getElementById('search-summary');
+            summaryElement.innerHTML = `
+                Showing **Top ${itineraries.length}** options for ${ORIGIN} &rarr; ${DESTINATION} | Constraints: Depart After ${MIN_DEPART_HOUR}:00, Duration &lt; ${MAX_DURATION_HOURS}h.
+            `;
+
+            if (itineraries.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center p-10 bg-white rounded-xl shadow-lg">
+                        <p class="text-2xl font-semibold text-red-600">No Valid Flights Found.</p>
+                        <p class="mt-2 text-gray-600">Try relaxing the departure time or duration constraints.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            itineraries.forEach(flight => {
+                container.innerHTML += createFlightCard(flight);
+            });
+        }
+        
+        function displayError(message) {
+            const container = document.getElementById('results-container');
+            container.innerHTML = `
+                <div class="text-center p-10 bg-red-50 rounded-xl shadow-lg border border-red-300">
+                    <p class="text-2xl font-semibold text-red-700">🚨 Error During Search</p>
+                    <p class="mt-2 text-red-600">${message}</p>
+                </div>
+            `;
+        }
+
+        // Run the search when the script loads
+        window.onload = () => {
+            // Note: The loading spinner is already in the HTML.
+            runFlightSearch();
+        };
+
+    </script>
+</body>
+</html>
