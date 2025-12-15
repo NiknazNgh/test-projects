@@ -19,7 +19,7 @@ DIS_WIDTH = 600
 DIS_HEIGHT = 400
 
 dis = pygame.display.set_mode((DIS_WIDTH, DIS_HEIGHT))
-pygame.display.set_caption("Chaotic Snake by Gemini")
+pygame.display.set_caption('Chaotic Snake by Gemini')
 
 clock = pygame.time.Clock()
 
@@ -28,13 +28,11 @@ SNAKE_BLOCK = 10
 FONT_STYLE = pygame.font.SysFont("bahnschrift", 25)
 SCORE_FONT = pygame.font.SysFont("comicsansms", 35)
 
-
 def message(msg, color):
     mesg = FONT_STYLE.render(msg, True, color)
     # Center the message
-    text_rect = mesg.get_rect(center=(DIS_WIDTH / 2, DIS_HEIGHT / 2))
+    text_rect = mesg.get_rect(center=(DIS_WIDTH/2, DIS_HEIGHT/2))
     dis.blit(mesg, text_rect)
-
 
 def gameLoop():
     game_over = False
@@ -57,10 +55,10 @@ def gameLoop():
     # CHAOS VARIABLES
     last_chaos_time = time.time()
     chaos_interval = 10  # Seconds between chaos events
-    chaos_duration = 5  # How long the chaos lasts
-    current_chaos = None  # 'REVERSE', 'SPEED', 'COLOR'
+    chaos_duration = 5   # How long the chaos lasts
+    current_chaos = None # 'REVERSE', 'SPEED', 'COLOR'
     chaos_end_time = 0
-
+    
     # Base Speed
     snake_speed = 15
 
@@ -81,19 +79,19 @@ def gameLoop():
 
         # --- CHAOS LOGIC ---
         current_time = time.time()
-
+        
         # Trigger Chaos
         if current_chaos is None and (current_time - last_chaos_time > chaos_interval):
-            modes = ["REVERSE", "SPEED", "FLASH"]
+            modes = ['REVERSE', 'SPEED', 'FLASH']
             current_chaos = random.choice(modes)
             chaos_end_time = current_time + chaos_duration
-            last_chaos_time = chaos_end_time  # Reset timer for next cycle
-
+            last_chaos_time = chaos_end_time # Reset timer for next cycle
+        
         # Check if Chaos is over
         if current_chaos and current_time > chaos_end_time:
             current_chaos = None
-            snake_speed = 15  # Reset speed
-
+            snake_speed = 15 # Reset speed
+            
         # --- INPUT HANDLING ---
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -106,7 +104,7 @@ def gameLoop():
                 down = pygame.K_DOWN
 
                 # REVERSE CHAOS: Swap the keys!
-                if current_chaos == "REVERSE":
+                if current_chaos == 'REVERSE':
                     left, right = right, left
                     up, down = down, up
 
@@ -126,24 +124,24 @@ def gameLoop():
         # Boundary Check
         if x1 >= DIS_WIDTH or x1 < 0 or y1 >= DIS_HEIGHT or y1 < 0:
             game_close = True
-
+        
         x1 += x1_change
         y1 += y1_change
-
+        
         # Background Color Logic
         bg_color = BLACK
-        if current_chaos == "FLASH":
-            bg_color = random.choice([BLACK, PURPLE, BLUE])
-        elif current_chaos == "REVERSE":
-            bg_color = (50, 50, 50)  # Dark Grey
-        elif current_chaos == "SPEED":
-            bg_color = (50, 0, 0)  # Dark Red
+        if current_chaos == 'FLASH':
+             bg_color = random.choice([BLACK, PURPLE, BLUE])
+        elif current_chaos == 'REVERSE':
+             bg_color = (50, 50, 50) # Dark Grey
+        elif current_chaos == 'SPEED':
+             bg_color = (50, 0, 0) # Dark Red
 
         dis.fill(bg_color)
-
+        
         # Draw Food
         pygame.draw.rect(dis, GREEN, [foodx, foody, SNAKE_BLOCK, SNAKE_BLOCK])
-
+        
         # Snake Movement Logic
         snake_Head = []
         snake_Head.append(x1)
@@ -166,10 +164,8 @@ def gameLoop():
             text = SCORE_FONT.render(status, True, WHITE)
             dis.blit(text, [10, 10])
         else:
-            # Show Score
-            value = SCORE_FONT.render(
-                "Score: " + str(Length_of_snake - 1), True, YELLOW
-            )
+             # Show Score
+            value = SCORE_FONT.render("Score: " + str(Length_of_snake - 1), True, YELLOW)
             dis.blit(value, [0, 0])
 
         pygame.display.update()
@@ -181,13 +177,12 @@ def gameLoop():
             Length_of_snake += 1
 
         # SPEED CHAOS: Double the framerate
-        if current_chaos == "SPEED":
+        if current_chaos == 'SPEED':
             clock.tick(30)
         else:
             clock.tick(snake_speed)
 
     pygame.quit()
     quit()
-
 
 gameLoop()
